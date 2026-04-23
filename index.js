@@ -47,8 +47,21 @@
 //     user: ${user} <br>
 //     winner: ${result}
 // `;
-let divArray = Array.from(document.getElementsByClassName("joke"));
-console.log(divArray);
-divArray.forEach((div) => {div.style.display = "none"});
-let output = divArray[Math.floor(Math.random() * divArray.length)];
-output.style.display = "block";
+// let divArray = Array.from(document.getElementsByClassName("joke"));
+
+// divArray.forEach((div) => {div.style.display = "none"});
+// let output = divArray[Math.floor(Math.random() * divArray.length)];
+// output.style.display = "block";
+
+// clock
+const time = () => {
+let a = new Date();
+let h = a.getHours();
+let m = a.getMinutes();
+let s = a.getSeconds();
+let d = a.getDate();
+
+// console.log(h, m, s, d);
+document.querySelector(".see").innerHTML = ("time: " + h +" : " + m + " : " + s + " : " + d)
+}
+setInterval (time, 1000);
