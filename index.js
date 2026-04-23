@@ -62,6 +62,6 @@ let s = a.getSeconds();
 let d = a.getDate();
 
 // console.log(h, m, s, d);
-document.querySelector(".see").innerHTML = ("time: " + h +" : " + m + " : " + s + " : " + d)
+document.querySelector(".see").innerHTML = (h +" : " + m + " : " + s + " : " + d)
 }
 setInterval (time, 1000);
